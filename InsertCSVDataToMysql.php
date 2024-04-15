@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
  
-$csvFile = 'twitter.csv';
+$csvFile = 'Mental-Health-Twitter/Mental-Health-Twitter.csv';
  
 if (($handle = fopen($csvFile, "r")) !== FALSE) {
      

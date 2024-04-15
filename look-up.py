@@ -2,27 +2,13 @@ from requests_oauthlib import OAuth1Session
 import os
 import json
 
-# To set your enviornment variables in your terminal run the following line:
-# export 'CONSUMER_KEY'='<your_consumer_key>'
-# export 'CONSUMER_SECRET'='<your_consumer_secret>'
+consumer_key = 'DAST4'
+consumer_secret = 'qKlWXIx7'
+access_token = '2557312890'
+access_token_secret = 'ZSFZci'
 
 
-consumer_key = 'DAST4Xh8pE6vLkIz9sqlVDQgK'
-consumer_secret = 'qKlWXIx74fUbtRfLylRsW81bJIxJ29tbthTHH8di10EJimfuiT'
-access_token = '2557312890-Fk2LASlkeHIDeLlu9LfxFxDhAXmLnJHetZF4rgg'
-access_token_secret = 'ZSFZciseOFaUevYSzg1X4LjH4QnA7okmGO6lecHck5rKL'
-
-
-# You can adjust ids to include a single Tweets
-# Or you can add to up to 100 comma-separated IDs
 params = {"ids": "1720766920847208448", "tweet.fields": "created_at"}
-# Tweet fields are adjustable.
-# Options include:
-# attachments, author_id, context_annotations,
-# conversation_id, created_at, entities, geo, id,
-# in_reply_to_user_id, lang, non_public_metrics, organic_metrics,
-# possibly_sensitive, promoted_metrics, public_metrics, referenced_tweets,
-# source, text, and withheld
 
 request_token_url = "https://api.twitter.com/oauth/request_token"
 oauth = OAuth1Session(consumer_key, client_secret=consumer_secret)
